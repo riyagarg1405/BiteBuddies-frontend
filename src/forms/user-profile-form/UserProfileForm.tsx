@@ -33,7 +33,7 @@ const UserProfileForm = ({ onSave , isLoading, currentUser }: Props) => {
 
   useEffect(()=>{
     form.reset(currentUser);
-  }, [currentUser,form] )
+  }, [currentUser,form] );
 
   return(
     <Form {...form}>
