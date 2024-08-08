@@ -9,7 +9,7 @@ type Props = {
 const OrderStatusHeader = ({order}: Props) => {
 
     const getExpectedDelivery = () => {
-        const created = new Date(order.createAt);
+        const created = new Date(order.createdAt);
 
         created.setMinutes(
             created.getMinutes() + order.restaurant.estimatedDeliveryTime

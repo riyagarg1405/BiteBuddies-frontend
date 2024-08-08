@@ -29,7 +29,7 @@ const OrderItemCard = ({order}: Props) => {
     };
     
     const getTime = () => {
-        const orderDateTime = new Date(order.createAt);
+        const orderDateTime = new Date(order.createdAt);
 
         const hours = orderDateTime.getHours();
         const minutes = orderDateTime.getMinutes();
